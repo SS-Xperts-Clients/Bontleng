@@ -26,7 +26,9 @@ export const site = {
   fullName: 'Pendula Student Accommodation',
   email: 'hello@pendula.co.za',
   phone: '+27 00 000 0000',
-  address: '12 Academic Plaza, South Kensington, London, SW7 2AZ'
+  address: '12 Academic Plaza, South Kensington, London, SW7 2AZ',
+  mapsUrl:
+    'https://www.google.com/maps/search/?api=1&query=12%20Academic%20Plaza%2C%20South%20Kensington%2C%20London%2C%20SW7%202AZ'
 };
 
 export const about = {

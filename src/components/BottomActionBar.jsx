@@ -1,17 +1,16 @@
-import { Link } from 'react-router-dom';
 import { Calendar, MessageSquare } from 'lucide-react';
 
 export function BottomActionBar() {
   return (
     <div className="bottom-action-bar" aria-label="Quick actions">
-      <Link to="/contact">
+      <a href="/contact">
         <MessageSquare size={18} />
         Enquire
-      </Link>
-      <Link className="primary" to="/contact">
+      </a>
+      <a className="primary" href="/contact">
         <Calendar size={18} />
         Request Viewing
-      </Link>
+      </a>
     </div>
   );
 }

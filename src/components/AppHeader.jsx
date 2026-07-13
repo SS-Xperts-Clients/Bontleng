@@ -1,5 +1,6 @@
+import { useState } from 'react';
 import { Link, NavLink } from 'react-router-dom';
-import { Menu } from 'lucide-react';
+import { Menu, X } from 'lucide-react';
 import { site } from '../data/site.js';
 
 const navItems = [
@@ -10,9 +11,12 @@ const navItems = [
 ];
 
 export function AppHeader() {
+  const [isMenuOpen, setIsMenuOpen] = useState(false);
+  const closeMenu = () => setIsMenuOpen(false);
+
   return (
     <header className="site-header">
-      <Link className="brand" to="/" aria-label="Pendula home">
+      <Link className="brand" to="/" aria-label="Pendula home" onClick={closeMenu}>
         <img src="/pendula_logo.png" alt="" />
         <span>{site.name}</span>
       </Link>
@@ -29,12 +33,31 @@ export function AppHeader() {
           )
         )}
       </nav>
-      <Link className="pill-button header-cta" to="/contact">
+      <Link className="pill-button header-cta" to="/contact" onClick={closeMenu}>
         Check Availability
       </Link>
-      <button className="icon-button mobile-menu" aria-label="Open menu">
-        <Menu size={22} />
+      <button
+        className="icon-button mobile-menu"
+        aria-label={isMenuOpen ? 'Close menu' : 'Open menu'}
+        aria-expanded={isMenuOpen}
+        onClick={() => setIsMenuOpen((current) => !current)}
+        type="button"
+      >
+        {isMenuOpen ? <X size={22} /> : <Menu size={22} />}
       </button>
+      <nav className={`mobile-nav ${isMenuOpen ? 'open' : ''}`} aria-label="Mobile navigation">
+        {navItems.map(([label, href]) =>
+          href.startsWith('/#') ? (
+            <a key={href} href={href} onClick={closeMenu}>
+              {label}
+            </a>
+          ) : (
+            <NavLink key={href} to={href} onClick={closeMenu}>
+              {label}
+            </NavLink>
+          )
+        )}
+      </nav>
     </header>
   );
 }

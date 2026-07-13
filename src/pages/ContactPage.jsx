@@ -1,3 +1,4 @@
+import { ExternalLink, MapPin } from 'lucide-react';
 import { contactMethods, faqs, site } from '../data/site.js';
 import { EnquiryForm } from '../components/EnquiryForm.jsx';
 import { FaqAccordion } from '../components/FaqAccordion.jsx';
@@ -44,8 +45,22 @@ export function ContactPage() {
         </section>
       </div>
 
-      <section className="map-block">
-        <div>
+      <section className="location-section">
+        <div className="location-copy">
+          <span className="eyebrow">Location</span>
+          <h2>Find Pendula Student Accommodation</h2>
+          <p>
+            Use the map link to check travel distance, nearby transport, and surrounding services.
+            The final address can be updated before launch.
+          </p>
+          <a className="pill-button" href={site.mapsUrl} target="_blank" rel="noreferrer">
+            <MapPin size={18} />
+            View on Google Maps
+            <ExternalLink size={16} />
+          </a>
+        </div>
+        <div className="location-card">
+          <MapPin size={26} />
           <strong>{site.name} Student Accommodation</strong>
           <span>{site.address}</span>
         </div>

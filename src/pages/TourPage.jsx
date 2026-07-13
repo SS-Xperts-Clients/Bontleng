@@ -110,7 +110,10 @@ export function TourPage() {
       await navigator.clipboard.writeText(shareUrl);
       showActionMessage('Preview link copied.');
     } catch (error) {
-      showActionMessage('Sharing was cancelled.');
+      const subject = encodeURIComponent(title);
+      const body = encodeURIComponent(`${text}\n\n${shareUrl}`);
+      window.location.href = `mailto:?subject=${subject}&body=${body}`;
+      showActionMessage('Opening email share.');
     }
   }
 

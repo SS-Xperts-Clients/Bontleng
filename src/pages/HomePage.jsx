@@ -14,7 +14,7 @@ export function HomePage() {
       <section className="hero" style={{ backgroundImage: `linear-gradient(90deg, rgba(0,62,46,.82), rgba(0,62,46,.22)), url(${heroImage})` }}>
         <div className="hero-panel">
           <span className="eyebrow">Student Accommodation</span>
-          <h1>Student accommodation made for study and everyday living.</h1>
+          <h1>Student accommodation for study and everyday living.</h1>
           <p>
             Secure, welcoming accommodation where students can study, grow, and build lifelong
             friendships.
@@ -24,7 +24,7 @@ export function HomePage() {
               Check Availability
               <ArrowRight size={18} />
             </Link>
-            <Link className="outline-button light" to="/tour">
+            <Link className="outline-button hero-secondary" to="/tour">
               View Spaces
             </Link>
           </div>

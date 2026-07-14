@@ -34,7 +34,36 @@ Backend:
 - `GET /api/health`
 - `POST /api/enquiries`
 
-## Production
+## Netlify Deployment
+
+This project is ready to deploy on Netlify.
+
+Netlify settings:
+
+- Build command: `npm run build`
+- Publish directory: `dist`
+- Functions directory: `netlify/functions`
+
+The `netlify.toml` file configures:
+
+- `/api/enquiries` -> Netlify Function for enquiry emails
+- `/api/health` -> Netlify Function health check
+- `/*` -> `/index.html` for React routes like `/rooms`, `/tour`, and `/contact`
+
+Set these environment variables in Netlify under Site configuration > Environment variables:
+
+- `SMTP_HOST`
+- `SMTP_PORT`
+- `SMTP_USER`
+- `SMTP_PASS`
+- `MAIL_TO`
+
+Optional variables:
+
+- `SMTP_SECURE`
+- `MAIL_FROM`
+
+## Express Production
 
 Build the React app:
 
@@ -48,7 +77,7 @@ Start the Express app:
 npm start
 ```
 
-In production, Express serves the compiled React app from `dist/` and handles `/api/enquiries`.
+In Express production, Express serves the compiled React app from `dist/` and handles `/api/enquiries`.
 
 ## Email
 
@@ -84,4 +113,4 @@ Replace these placeholders before launch:
 - Room image URLs
 - Room pricing if prices should be shown
 
-The enquiry form sends to the Express endpoint at `/api/enquiries`.
+The enquiry form sends to `/api/enquiries`. On Netlify, that route is rewritten to a Netlify Function. In local Express development, it is handled by `server/index.js`.

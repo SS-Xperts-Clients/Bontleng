@@ -98,7 +98,7 @@ export function TourPage() {
   async function sharePreview() {
     const shareUrl = `${window.location.origin}/tour`;
     const title = `${active.name} preview`;
-    const text = `View the ${active.name} space preview at Pendula Student Accommodation.`;
+    const text = `View the ${active.name} space preview at Bontleng Student accommodation.`;
 
     try {
       if (navigator.share) {
@@ -170,7 +170,7 @@ export function TourPage() {
           <div className="tour-selector-panel">
           <span className="eyebrow">Room Preview</span>
           <h1>Explore the Space</h1>
-          <p>Switch between Pendula student living areas and room previews.</p>
+          <p>Switch between Bontleng student living areas and room previews.</p>
           <div className="tour-options">
             {tourSpaces.map((space, index) => (
               <button

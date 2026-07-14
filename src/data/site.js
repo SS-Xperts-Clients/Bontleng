@@ -22,9 +22,9 @@ import {
 } from 'lucide-react';
 
 export const site = {
-  name: 'Pendula',
-  fullName: 'Pendula Student Accommodation',
-  email: 'hello@pendula.co.za',
+  name: 'Bontleng',
+  fullName: 'Bontleng Student accommodation',
+  email: 'hello@bontleng.co.za',
   phone: '+27 00 000 0000',
   address: '12 Academic Plaza, South Kensington, London, SW7 2AZ',
   mapsUrl:
@@ -32,10 +32,10 @@ export const site = {
 };
 
 export const about = {
-  eyebrow: 'About Pendula',
+  eyebrow: 'About Bontleng',
   title: 'We Care About Student Success',
   paragraphs: [
-    'At Pendula Student Accommodation, we believe that every student deserves a comfortable place to call home.',
+    'At Bontleng Student accommodation, we believe that every student deserves a comfortable place to call home.',
     'Our accommodation is designed to provide a peaceful, secure, and welcoming environment where students can study, grow, and build lifelong friendships.',
     'Our mission is to create more than just accommodation; we create a community.'
   ]
@@ -120,7 +120,7 @@ export const faqs = [
   {
     question: 'Can I enquire about availability online?',
     answer:
-      'Yes. Use the enquiry form and the Pendula team will respond with availability and next steps.'
+      'Yes. Use the enquiry form and the Bontleng team will respond with availability and next steps.'
   },
   {
     question: 'Are common areas cleaned?',

@@ -31,7 +31,7 @@ export function ContactPage() {
           </aside>
           <section className="form-card">
             <h2>Send an Enquiry</h2>
-            <p>Fill out the form and the Pendula team will respond with availability and next steps.</p>
+            <p>Fill out the form and the Bontleng team will respond with availability and next steps.</p>
             <EnquiryForm />
           </section>
         </section>
@@ -48,7 +48,7 @@ export function ContactPage() {
       <section className="location-section">
         <div className="location-copy">
           <span className="eyebrow">Location</span>
-          <h2>Find Pendula Student Accommodation</h2>
+          <h2>Find Bontleng Student accommodation</h2>
           <p>
             Use the map link to check travel distance, nearby transport, and surrounding services.
             The final address can be updated before launch.
@@ -61,7 +61,7 @@ export function ContactPage() {
         </div>
         <div className="location-card">
           <MapPin size={26} />
-          <strong>{site.name} Student Accommodation</strong>
+          <strong>{site.fullName}</strong>
           <span>{site.address}</span>
         </div>
       </section>

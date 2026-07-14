@@ -109,7 +109,7 @@ export function HomePage() {
           <article>
             <div className="stars">★★★★★</div>
             <p>
-              “The environment at Pendula is peaceful and secure. It gives students the space to
+              “The environment at Bontleng is peaceful and secure. It gives students the space to
               focus, rest, and connect with others.”
             </p>
             <strong>Resident Feedback</strong>
@@ -128,7 +128,7 @@ export function HomePage() {
       </section>
 
       <section className="section cta-section">
-        <h2>Find your place at Pendula.</h2>
+        <h2>Find your place at Bontleng.</h2>
         <p>Send an enquiry and our team will help with room availability and viewing options.</p>
         <Link className="pill-button" to="/contact">
           Enquire Now

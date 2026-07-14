@@ -1,6 +1,6 @@
-# Pendula Student Accommodation
+# Bontleng Student accommodation
 
-React + Express website for Pendula Student Accommodation.
+React + Express website for Bontleng Student accommodation.
 
 ## Local Setup
 

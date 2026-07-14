@@ -16,8 +16,8 @@ export function AppHeader() {
 
   return (
     <header className="site-header">
-      <Link className="brand" to="/" aria-label="Pendula home" onClick={closeMenu}>
-        <img src="/pendula_logo.png" alt="" />
+      <Link className="brand" to="/" aria-label="Bontleng home" onClick={closeMenu}>
+        <img src="/bontleng_student_accommodation_refined_logo.png" alt="" />
         <span>{site.name}</span>
       </Link>
       <nav className="desktop-nav" aria-label="Primary navigation">

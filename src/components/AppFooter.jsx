@@ -37,7 +37,7 @@ export function AppFooter() {
         </section>
       </div>
       <div className="footer-bottom">
-        <span>© 2026 Pendula Student Accommodation. All rights reserved.</span>
+        <span>© 2026 Bontleng Student accommodation. All rights reserved.</span>
         <button className="icon-button footer-share" aria-label="Share website">
           <Share2 size={18} />
         </button>

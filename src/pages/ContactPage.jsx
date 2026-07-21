@@ -31,12 +31,12 @@ export function ContactPage() {
           </aside>
           <section className="form-card">
             <h2>Send an Enquiry</h2>
-            <p>Fill out the form and the Bontleng team will respond with availability and next steps.</p>
+            <p>Fill out the form and the Elim team will respond with availability and next steps.</p>
             <EnquiryForm />
           </section>
         </section>
 
-        <section className="section faq-section">
+        <section className="section faq-section" id="faq">
           <div className="section-heading centered">
             <span className="eyebrow">FAQ</span>
             <h2>Frequently Asked Questions</h2>
@@ -48,7 +48,7 @@ export function ContactPage() {
       <section className="location-section">
         <div className="location-copy">
           <span className="eyebrow">Location</span>
-          <h2>Find Bontleng Student accommodation</h2>
+          <h2>Find Elim student Residency</h2>
           <p>
             Use the map link to check travel distance, nearby transport, and surrounding services.
             The final address can be updated before launch.

@@ -1,8 +1,8 @@
-# Pendula React Implementation Plan
+# Elim student Residency React Implementation Plan
 
 ## 1. Product Scope
 
-Build a responsive React website for Pendula student accommodation, based on the supplied designs in `doc/design`.
+Build a responsive React website for Elim student Residency, based on the supplied designs in `doc/design`.
 
 Primary pages:
 
@@ -76,7 +76,7 @@ Heading:
 
 Copy:
 
-- At Pendula Student Accommodation, we believe that every student deserves a comfortable place to call home.
+- At Elim student Residency, we believe that every student deserves a comfortable place to call home.
 - Our accommodation is designed to provide a peaceful, secure, and welcoming environment where students can study, grow, and build lifelong friendships.
 - Our mission is to create more than just accommodation; we create a community.
 
@@ -107,10 +107,8 @@ Keep these amenities unless the client later confirms otherwise:
 - Unlimited Wi-Fi
 - Fully equipped kitchen
 - Laundry facilities
-- Study areas
 - Entertainment area
 - Secure access
-- CCTV surveillance
 - Daily cleaning of common areas
 - Secure parking
 - Outdoor relaxation area
@@ -123,7 +121,6 @@ Section heading:
 
 Property features:
 
-- CCTV cameras
 - Controlled access
 - Secure gates
 - Perimeter fencing

@@ -1,0 +1,25 @@
+
+> elim-student-residency@0.1.0 dev
+> concurrently "npm run dev:server" "npm run dev:client"
+
+[0] 
+[0] > elim-student-residency@0.1.0 dev:server
+[0] > nodemon server/index.js
+[0] 
+[1] 
+[1] > elim-student-residency@0.1.0 dev:client
+[1] > vite --host 0.0.0.0
+[1] 
+[1] [2m16:39:45[22m [36m[1m[vite][22m[39m [90m[2m(client)[22m[39m Re-optimizing dependencies because lockfile has changed
+[1] 
+[1]   [32m[1mVITE[22m v8.1.4[39m  [2mready in [0m[1m298[22m[2m[0m ms[22m
+[1] 
+[1]   [32m➜[39m  [1mLocal[22m:   [36mhttp://localhost:[1m5173[22m/[39m
+[1]   [32m➜[39m  [1mNetwork[22m: [36mhttp://192.168.0.173:[1m5173[22m/[39m
+[1]   [32m➜[39m  [1mNetwork[22m: [36mhttp://172.31.160.1:[1m5173[22m/[39m
+[0] [33m[nodemon] 3.1.14[39m
+[0] [33m[nodemon] to restart at any time, enter `rs`[39m
+[0] [33m[nodemon] watching path(s): *.*[39m
+[0] [33m[nodemon] watching extensions: js,mjs,cjs,json[39m
+[0] [32m[nodemon] starting `node server/index.js`[39m
+[0] Elim app listening on port 3000

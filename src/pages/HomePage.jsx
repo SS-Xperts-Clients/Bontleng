@@ -109,7 +109,7 @@ export function HomePage() {
           <article>
             <div className="stars">★★★★★</div>
             <p>
-              “The environment at Bontleng is peaceful and secure. It gives students the space to
+              “The environment at Elim is peaceful and secure. It gives students the space to
               focus, rest, and connect with others.”
             </p>
             <strong>Resident Feedback</strong>
@@ -122,13 +122,13 @@ export function HomePage() {
           />
           <div>
             <strong>Secure Living</strong>
-            <span>Controlled access and CCTV surveillance</span>
+            <span>Controlled access and secure gates</span>
           </div>
         </div>
       </section>
 
       <section className="section cta-section">
-        <h2>Find your place at Bontleng.</h2>
+        <h2>Find your place at Elim.</h2>
         <p>Send an enquiry and our team will help with room availability and viewing options.</p>
         <Link className="pill-button" to="/contact">
           Enquire Now

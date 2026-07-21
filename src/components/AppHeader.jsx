@@ -16,16 +16,16 @@ export function AppHeader() {
 
   return (
     <header className="site-header">
-      <Link className="brand" to="/" aria-label="Bontleng home" onClick={closeMenu}>
-        <img src="/bontleng_student_accommodation_refined_logo.png" alt="" />
+      <Link className="brand" to="/" aria-label="Elim home" onClick={closeMenu}>
+        <img src="/elim_student_residency_logo.png" alt="" />
         <span>{site.name}</span>
       </Link>
       <nav className="desktop-nav" aria-label="Primary navigation">
         {navItems.map(([label, href]) =>
           href.startsWith('/#') ? (
-            <a key={href} href={href}>
+            <Link key={href} to={href}>
               {label}
-            </a>
+            </Link>
           ) : (
             <NavLink key={href} to={href}>
               {label}
@@ -48,9 +48,9 @@ export function AppHeader() {
       <nav className={`mobile-nav ${isMenuOpen ? 'open' : ''}`} aria-label="Mobile navigation">
         {navItems.map(([label, href]) =>
           href.startsWith('/#') ? (
-            <a key={href} href={href} onClick={closeMenu}>
+            <Link key={href} to={href} onClick={closeMenu}>
               {label}
-            </a>
+            </Link>
           ) : (
             <NavLink key={href} to={href} onClick={closeMenu}>
               {label}

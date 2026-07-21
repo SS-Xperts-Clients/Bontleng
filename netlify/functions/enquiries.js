@@ -77,7 +77,7 @@ function buildEmail(body) {
 
   return {
     text,
-    html: `<h2>New Bontleng Website Enquiry</h2><table cellspacing="0" cellpadding="0">${htmlRows}</table>`
+    html: `<h2>New Elim Website Enquiry</h2><table cellspacing="0" cellpadding="0">${htmlRows}</table>`
   };
 }
 
@@ -108,7 +108,7 @@ export async function handler(event) {
       from: process.env.MAIL_FROM || process.env.SMTP_USER,
       to: process.env.MAIL_TO,
       replyTo: body.email,
-      subject: `Bontleng enquiry from ${body.fullName}`,
+      subject: `Elim enquiry from ${body.fullName}`,
       text: email.text,
       html: email.html
     });

@@ -23,16 +23,6 @@ const tourSpaces = [
     ]
   },
   {
-    name: 'Study Areas',
-    floor: 'Quiet Zone',
-    note: 'Spaces for focused study and daily academic work.',
-    images: [
-      'https://images.unsplash.com/photo-1497366754035-f200968a6e72?auto=format&fit=crop&w=1800&q=85',
-      'https://images.unsplash.com/photo-1497366811353-6870744d04b2?auto=format&fit=crop&w=1800&q=85',
-      'https://images.unsplash.com/photo-1518005020951-eccb494ad742?auto=format&fit=crop&w=1800&q=85'
-    ]
-  },
-  {
     name: 'Outdoor Relaxation',
     floor: 'Courtyard',
     note: 'Outdoor areas for breaks between study sessions.',
@@ -98,7 +88,7 @@ export function TourPage() {
   async function sharePreview() {
     const shareUrl = `${window.location.origin}/tour`;
     const title = `${active.name} preview`;
-    const text = `View the ${active.name} space preview at Bontleng Student accommodation.`;
+    const text = `View the ${active.name} space preview at Elim student Residency.`;
 
     try {
       if (navigator.share) {
@@ -170,7 +160,7 @@ export function TourPage() {
           <div className="tour-selector-panel">
           <span className="eyebrow">Room Preview</span>
           <h1>Explore the Space</h1>
-          <p>Switch between Bontleng student living areas and room previews.</p>
+          <p>Switch between Elim student living areas and room previews.</p>
           <div className="tour-options">
             {tourSpaces.map((space, index) => (
               <button
@@ -240,7 +230,7 @@ export function TourPage() {
           <span className="eyebrow">Student Living Preview</span>
           <h2>See the spaces that support study, comfort, and community.</h2>
           <p>
-            Select each space to preview the student rooms, study areas, shared living, and outdoor
+            Select each space to preview the student rooms, shared living, and outdoor
             relaxation spaces. These can use real photos or 3D-rendered images.
           </p>
         </div>

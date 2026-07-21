@@ -86,7 +86,7 @@ function buildEmail(body) {
 
   return {
     text,
-    html: `<h2>New Bontleng Website Enquiry</h2><table cellspacing="0" cellpadding="0">${htmlRows}</table>`
+    html: `<h2>New Elim Website Enquiry</h2><table cellspacing="0" cellpadding="0">${htmlRows}</table>`
   };
 }
 
@@ -109,7 +109,7 @@ app.post('/api/enquiries', async (req, res) => {
       from: process.env.MAIL_FROM || process.env.SMTP_USER,
       to: process.env.MAIL_TO,
       replyTo: req.body.email,
-      subject: `Bontleng enquiry from ${req.body.fullName}`,
+      subject: `Elim enquiry from ${req.body.fullName}`,
       text: email.text,
       html: email.html
     });
@@ -129,5 +129,5 @@ if (isProduction) {
 }
 
 app.listen(port, () => {
-  console.log(`Bontleng app listening on port ${port}`);
+  console.log(`Elim app listening on port ${port}`);
 });

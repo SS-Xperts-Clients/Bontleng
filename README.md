@@ -1,6 +1,6 @@
-# Bontleng Student accommodation
+# Elim student Residency
 
-React + Express website for Bontleng Student accommodation.
+React + Express website for Elim student Residency.
 
 ## Local Setup
 

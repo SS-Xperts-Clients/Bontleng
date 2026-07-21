@@ -1,8 +1,6 @@
 import {
   Armchair,
   BedDouble,
-  Calendar,
-  Camera,
   Car,
   CheckCircle2,
   ClipboardCheck,
@@ -22,9 +20,9 @@ import {
 } from 'lucide-react';
 
 export const site = {
-  name: 'Bontleng',
-  fullName: 'Bontleng Student accommodation',
-  email: 'hello@bontleng.co.za',
+  name: 'Elim',
+  fullName: 'Elim student Residency',
+  email: 'hello@elim.co.za',
   phone: '+27 00 000 0000',
   address: '12 Academic Plaza, South Kensington, London, SW7 2AZ',
   mapsUrl:
@@ -32,10 +30,10 @@ export const site = {
 };
 
 export const about = {
-  eyebrow: 'About Bontleng',
+  eyebrow: 'About Elim',
   title: 'We Care About Student Success',
   paragraphs: [
-    'At Bontleng Student accommodation, we believe that every student deserves a comfortable place to call home.',
+    'At Elim student Residency, we believe that every student deserves a comfortable place to call home.',
     'Our accommodation is designed to provide a peaceful, secure, and welcoming environment where students can study, grow, and build lifelong friendships.',
     'Our mission is to create more than just accommodation; we create a community.'
   ]
@@ -88,17 +86,14 @@ export const amenities = [
   ['Unlimited Wi-Fi', Wifi, 'Reliable connectivity for study, streaming, and staying in touch.'],
   ['Fully Equipped Kitchen', Utensils, 'Shared cooking spaces with essential appliances.'],
   ['Laundry Facilities', Sparkles, 'Convenient laundry access for everyday student living.'],
-  ['Study Areas', ClipboardCheck, 'Quiet spaces designed for focus and productivity.'],
   ['Entertainment Area', Sofa, 'A relaxed shared area for downtime and community.'],
   ['Secure Access', KeyRound, 'Controlled access helps keep the property secure.'],
-  ['CCTV Surveillance', Camera, 'Camera coverage supports safety across common areas.'],
   ['Daily Common Area Cleaning', ClipboardCheck, 'Shared spaces are cleaned daily.'],
   ['Secure Parking', Car, 'Parking access is available for residents.'],
   ['Outdoor Relaxation Area', Sparkles, 'Fresh-air spaces for breaks between study sessions.']
 ];
 
 export const safety = [
-  ['CCTV Cameras', Camera],
   ['Controlled Access', KeyRound],
   ['Secure Gates', ShieldCheck],
   ['Perimeter Fencing', Fence],
@@ -115,12 +110,12 @@ export const faqs = [
   {
     question: 'Are the rooms secure?',
     answer:
-      'Yes. The property includes controlled access, secure gates, perimeter fencing, CCTV cameras, and emergency contact support.'
+      'Yes. The property includes controlled access, secure gates, perimeter fencing, and emergency contact support.'
   },
   {
     question: 'Can I enquire about availability online?',
     answer:
-      'Yes. Use the enquiry form and the Bontleng team will respond with availability and next steps.'
+      'Yes. Use the enquiry form and the Elim team will respond with availability and next steps.'
   },
   {
     question: 'Are common areas cleaned?',

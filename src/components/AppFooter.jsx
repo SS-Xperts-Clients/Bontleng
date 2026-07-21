@@ -15,13 +15,13 @@ export function AppFooter() {
         <section>
           <h3>Explore</h3>
           <Link to="/rooms">Rooms</Link>
-          <a href="/#amenities">Amenities</a>
+          <Link to="/#amenities">Amenities</Link>
           <Link to="/tour">Space Preview</Link>
         </section>
         <section>
           <h3>Support</h3>
           <Link to="/contact">Contact</Link>
-          <Link to="/contact">FAQs</Link>
+          <Link to="/contact#faq">FAQs</Link>
           <a href={`mailto:${site.email}`}>{site.email}</a>
         </section>
         <section>
@@ -37,7 +37,7 @@ export function AppFooter() {
         </section>
       </div>
       <div className="footer-bottom">
-        <span>© 2026 Bontleng Student accommodation. All rights reserved.</span>
+        <span>© 2026 Elim student Residency. All rights reserved.</span>
         <button className="icon-button footer-share" aria-label="Share website">
           <Share2 size={18} />
         </button>

@@ -29,7 +29,7 @@ export function ContactPage() {
               </div>
             ))}
           </aside>
-          <section className="form-card">
+          <section className="form-card" id="enquiry" data-scroll-align="center">
             <h2>Send an Enquiry</h2>
             <p>Fill out the form and the Elim team will respond with availability and next steps.</p>
             <EnquiryForm />

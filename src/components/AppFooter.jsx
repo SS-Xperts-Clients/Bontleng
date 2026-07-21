@@ -20,7 +20,7 @@ export function AppFooter() {
         </section>
         <section>
           <h3>Support</h3>
-          <Link to="/contact">Contact</Link>
+          <Link to="/contact#enquiry">Contact</Link>
           <Link to="/contact#faq">FAQs</Link>
           <a href={`mailto:${site.email}`}>{site.email}</a>
         </section>

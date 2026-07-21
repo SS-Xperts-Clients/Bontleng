@@ -27,14 +27,14 @@ export function RoomCard({ room, reversed = false }) {
           ))}
         </ul>
         <div className="button-row">
-          <Link className="pill-button" to="/contact">
+          <Link className="pill-button" to="/contact#enquiry">
             Enquire Now
           </Link>
           <Link className="outline-button" to="/tour">
             <Radar size={17} />
             View Space
           </Link>
-          <Link className="text-link" to="/contact">
+          <Link className="text-link" to="/contact#enquiry">
             <Info size={16} />
             View Details
           </Link>

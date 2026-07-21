@@ -7,7 +7,7 @@ const navItems = [
   ['Rooms', '/rooms'],
   ['Amenities', '/#amenities'],
   ['Space Preview', '/tour'],
-  ['Contact', '/contact']
+  ['Contact', '/contact#enquiry']
 ];
 
 export function AppHeader() {
@@ -33,7 +33,7 @@ export function AppHeader() {
           )
         )}
       </nav>
-      <Link className="pill-button header-cta" to="/contact" onClick={closeMenu}>
+      <Link className="pill-button header-cta" to="/contact#enquiry" onClick={closeMenu}>
         Check Availability
       </Link>
       <button

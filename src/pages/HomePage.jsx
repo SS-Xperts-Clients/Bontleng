@@ -20,7 +20,7 @@ export function HomePage() {
             friendships.
           </p>
           <div className="button-row">
-            <Link className="pill-button gold" to="/contact">
+            <Link className="pill-button gold" to="/contact#enquiry">
               Check Availability
               <ArrowRight size={18} />
             </Link>
@@ -130,7 +130,7 @@ export function HomePage() {
       <section className="section cta-section">
         <h2>Find your place at Elim.</h2>
         <p>Send an enquiry and our team will help with room availability and viewing options.</p>
-        <Link className="pill-button" to="/contact">
+        <Link className="pill-button" to="/contact#enquiry">
           Enquire Now
         </Link>
       </section>

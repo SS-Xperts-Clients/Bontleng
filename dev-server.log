@@ -23,3 +23,8 @@
 [0] [33m[nodemon] watching extensions: js,mjs,cjs,json[39m
 [0] [32m[nodemon] starting `node server/index.js`[39m
 [0] Elim app listening on port 3000
+[0] [32m[nodemon] restarting due to changes...[39m
+[0] [32m[nodemon] restarting due to changes...[39m
+[0] [32m[nodemon] restarting due to changes...[39m
+[0] [32m[nodemon] starting `node server/index.js`[39m
+[0] Elim app listening on port 3000

@@ -23,10 +23,10 @@ export const site = {
   name: 'Elim',
   fullName: 'Elim student Residency',
   email: 'hello@elim.co.za',
-  phone: '+27 00 000 0000',
-  address: '12 Academic Plaza, South Kensington, London, SW7 2AZ',
+  phone: '+27 73 139 0344',
+  address: '89 Braam Pretorius Street, Wonderboom, Pretoria',
   mapsUrl:
-    'https://www.google.com/maps/search/?api=1&query=12%20Academic%20Plaza%2C%20South%20Kensington%2C%20London%2C%20SW7%202AZ'
+    'https://www.google.com/maps/search/?api=1&query=89%20Braam%20Pretorius%20Street%2C%20Wonderboom%2C%20Pretoria'
 };
 
 export const about = {
@@ -128,3 +128,4 @@ export const contactMethods = [
   ['Phone', site.phone, Phone],
   ['Email', site.email, Mail]
 ];
+

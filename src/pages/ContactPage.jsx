@@ -50,8 +50,8 @@ export function ContactPage() {
           <span className="eyebrow">Location</span>
           <h2>Find Elim student Residency</h2>
           <p>
-            Use the map link to check travel distance, nearby transport, and surrounding services.
-            The final address can be updated before launch.
+            Use the map link to check travel distance, nearby transport, and surrounding services
+            around Wonderboom, Pretoria.
           </p>
           <a className="pill-button" href={site.mapsUrl} target="_blank" rel="noreferrer">
             <MapPin size={18} />
@@ -68,3 +68,4 @@ export function ContactPage() {
     </>
   );
 }
+

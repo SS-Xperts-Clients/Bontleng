@@ -63,6 +63,37 @@ Optional variables:
 - `SMTP_SECURE`
 - `MAIL_FROM`
 
+## Cloudflare Pages Deployment
+
+This project is ready to deploy on Cloudflare Pages.
+
+Cloudflare Pages settings:
+
+- Framework preset: `React (Vite)`
+- Build command: `npm run build`
+- Build output directory: `dist`
+
+The Cloudflare deployment files configure:
+
+- `wrangler.jsonc` -> Pages project name and build output directory
+- `public/_redirects` -> React route fallback to `/index.html`
+- `functions/api/enquiries.js` -> Cloudflare Pages Function for enquiry emails
+- `functions/api/health.js` -> Cloudflare Pages Function health check
+
+For the enquiry form on Cloudflare, configure Cloudflare Email Service and set these environment variables in Workers & Pages > your Pages project > Settings > Environment variables:
+
+- `CLOUDFLARE_ACCOUNT_ID`
+- `CLOUDFLARE_EMAIL_API_TOKEN`
+- `MAIL_FROM`
+- `MAIL_TO`
+
+`MAIL_FROM` must be an address on a Cloudflare Email Sending verified domain. `CLOUDFLARE_EMAIL_API_TOKEN` needs permission to send email for the account. Wrangler also uses a local/deploy-time `CLOUDFLARE_API_TOKEN` when deploying from the CLI.
+
+Deploy from the CLI after logging in to Cloudflare:
+
+```bash
+npm run deploy:cloudflare
+```
 ## Express Production
 
 Build the React app:
@@ -114,3 +145,4 @@ Replace these placeholders before launch:
 - Room pricing if prices should be shown
 
 The enquiry form sends to `/api/enquiries`. On Netlify, that route is rewritten to a Netlify Function. In local Express development, it is handled by `server/index.js`.
+
